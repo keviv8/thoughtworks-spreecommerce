@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+
+
+    <test name="logintests">
+        <parameter name="userName" value="xj@xj.com"/>
+        <parameter name="password" value="123456"/>
+        <parameter name="prodname" value="Ruby on Rails Bag"/>
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="browser-file" value="Firefox" />
+        <!--<groups>-->
+            <!--<run>-->
+                <!--<include name="regression"/>-->
+                <!--<exclude name="checkout"/>-->
+            <!--</run>-->
+        <!--</groups>-->
+
+    <classes>
+        <class name="logintests.login"/>
+        <class name="logintests.logout"/>
+        <!--<class name="searchtests.Search"/>-->
+
+    </classes>
+</test>
+</suite>
